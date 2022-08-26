@@ -1,0 +1,167 @@
+.archive {
+    padding: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.orders {
+    // background-color: aquamarine;
+    // width: 100%;
+    // min-height: 200px;
+    // padding: 10px;
+    display: grid;
+  
+    
+}
+  
+.order {
+    padding: 10px;
+    box-shadow: 3px 4px 4px 2px rgba(0, 0, 0, 0.373);
+    border-radius: 10px;
+    // display: flex;
+    width: 100%;
+    // justify-content: space-between;
+    margin-bottom: 20px;
+    background-color: rgba(230, 146, 20, 0.607);;
+    border: 1px solid black;
+    display: grid;
+    // gap: 20px;
+    // grid-template-columns: repeat(6, minmax(150px, 1fr));
+    // grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+
+    // grid-template-columns: 100px 100px 200px 100px 100px 100px;
+    // grid-template-rows: 200px 200px 200px;
+   
+    // justify-items: end;
+    // align-items: center;
+    // justify-items: end;
+    // justify-content: center;
+    // grid-template-areas:
+    // "A A A A A"
+    // "B B B B B"
+    // "C C C C C";
+    // grid-template-areas:
+    // "A A A A   D D D D  C C C C"
+    // "B B B B   B B B B   B B C C"
+    // "C C C C   B B B B   B B C C";
+
+    justify-items: stretch;
+    justify-content: space-between;
+
+    @media (max-width: 700px) {
+        // grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        // justify-items: center;
+        &__id {
+        // grid-column: 1;
+        // grid-row: 1;
+       
+        }
+        &__name {
+            // grid-column: 1;
+            // grid-row: 1;
+           
+        }
+        &__phoneNumber {
+            // grid-column: 1;
+            // grid-row: 2;
+        }
+
+
+       
+        &__sum {
+           
+        }
+        &__date {
+           
+        }
+      }
+    &__id {
+       
+    //    background-color: green;
+   
+    
+    }
+    &__name {
+        // background-color: yellow;
+      
+    }
+    &__phoneNumber {
+        // background-color: yellowgreen;
+      
+    }
+   
+    &__sum {
+        // background-color: rgba(48, 209, 224, 0.732);
+    }
+    &__date {
+        // background-color: blueviolet;
+    }
+  }
+
+  .product {
+// background-color: rgba(255, 0, 0, 0.649);
+// grid-column: 3;
+// grid-row: 3;
+    &__id {
+       font-size: 18px;
+       font-weight: 500;
+       grid-column: 1;
+    }
+    &__name {
+       font-size: 18px;
+       font-weight: 500;
+       grid-column: 2;
+    }
+    &__count {
+        font-size: 14px;
+        font-weight: 400;
+    }
+    &__price {
+        font-size: 14px;
+        font-weight: 400;
+    }
+  }
+
+.orderFilters {
+
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+
+    &__button {
+        margin-bottom: 10px;
+        margin-right: 15px;
+        padding: 5px;
+        width: 180px;
+        // height: 40px ;
+        border-radius: 25px;
+        background-color: rgb(255, 166, 0);
+        // background-color: rgba(0, 123, 255, 0.819);
+        // background-color: rgb(229, 69, 0);
+        color: white;
+        cursor: pointer;
+        outline: none;
+        border: none;
+        transition: 0.3s;
+        // color: rgb(115, 75, 0);
+        font-weight: 500;
+        font-size: 15px;
+        box-shadow: 1px 2px 4px 2px rgba(0, 0, 0, 0.614);
+        transition: 0.3s;
+        &:last-child {
+    
+        }
+        &:hover {
+          background-color: rgba(229, 69, 0, 0.777);
+          transform: scale(1.09);
+          color: white;
+        }
+        &:active {
+          transition: 0.4s;
+          transform: scale(1);
+          // background-color: rgb(229, 149, 0);
+          background-color: rgb(145, 43, 0);
+          box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 3px 3px 5px rgb(92, 92, 92);
+        }
+      }
+}

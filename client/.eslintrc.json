@@ -1,0 +1,31 @@
+{
+  // "parser": "babel-eslint",
+  // "parser": "@typescript-eslint/parser",
+  "extends": [
+    "next/core-web-vitals",
+    // "plugin:@typescript-eslint/recommended",
+    // "prettier"
+  ],
+  "plugins": [
+    "@typescript-eslint",
+    "prettier"
+],
+
+  "rules": {
+    // "prettier/prettier": [ // Обязательно!! Подсвечивает ошибки из Prettier.
+    //          "error",
+    //          {
+    //            "singleQuote": false,
+    //            "bracketSpacing": true,
+    //            "parser": "flow",
+    //            "tabWidth": 4,
+    //            "semi": true,
+    //           //  "jsxSingleQuote": true,
+    //            "endOfLine": "auto"
+           
+    //          }
+    //        ]
+  
+  }
+
+}

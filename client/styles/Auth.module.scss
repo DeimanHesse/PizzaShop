@@ -1,0 +1,120 @@
+.auth {
+  // background-color: aquamarine;
+  // height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+}
+
+.error {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+ 
+}
+
+.form {
+  
+  width: 45%;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  overflow: hidden;
+  @media (max-width: 991px) {
+    width: 60%;
+  }
+  @media (max-width: 600px) {
+    width: 90%;
+  }
+
+
+
+  &__title {
+    height: 60px;
+    font-size: 25px;
+    font-weight: 700;
+    background-color: rgba(255, 166, 0, 0.784);
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    // border: 3px solid red;
+    margin-bottom: 25px;
+    transition: 0.4s;
+    width: 100%;
+  }
+
+  &__label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  &__input {
+    height: 45px;
+    width: 70%;
+    font-size: 18px;
+    padding-left: 10px;
+   
+    &::placeholder {
+
+    }
+  }
+
+  &__errors {
+    position: absolute;
+    transition: 0.4s;
+    top: 80px;
+    color: red;
+  }
+
+  &__button {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 130px;
+    height: 45px;
+    border-radius: 25px;
+    background-color: rgba(255, 166, 0, 0.647);
+    cursor: pointer;
+    outline: none;
+    border: none;
+    transition: 0.3s;
+    color: rgb(115, 75, 0);
+    font-weight: 600;
+    font-size: 15px;
+    box-shadow: 1px 2px 4px 2px rgba(0, 0, 0, 0.614);
+    transition: 0.3s;
+    &:hover {
+      color: white;
+      background-color: orange;
+      transform: scale(1.09);
+     
+      
+    }
+    &:active {
+      transition: 0.4s;
+      transform: scale(1);
+      background-color: rgb(229, 149, 0);
+      box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 3px 3px 5px rgb(92, 92, 92);
+    }
+  }
+}
+
+.error {
+
+}

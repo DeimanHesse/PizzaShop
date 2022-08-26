@@ -1,0 +1,45 @@
+{
+  "name": "pizzashop",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev   -p 3001",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "check-types": "tsc --noemit",
+    "eslint": "eslint",
+    "lintR": "npm run eslint && npm run check-types"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.8.3",
+    "@types/react-redux": "^7.1.24",
+    "axios": "^0.27.2",
+    "date-fns": "^2.29.1",
+    "eslint-plugin-tsc": "^2.0.0",
+    "jwt-decode": "^3.1.2",
+    "moment": "^2.29.4",
+    "next": "12.2.2",
+    "next-redux-wrapper": "^7.0.5",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-hook-form": "^7.33.1",
+    "react-moment": "^1.1.2",
+    "react-redux": "^8.0.2",
+    "redux": "^4.2.0",
+    "sass": "^1.53.0",
+    "swiper": "^8.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "18.0.6",
+    "@types/react": "18.0.15",
+    "@types/react-dom": "18.0.6",
+    "@typescript-eslint/eslint-plugin": "^5.30.7",
+    "eslint": "8.20.0",
+    "eslint-config-next": "12.2.2",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.7.1",
+    "typescript": "4.7.4"
+  }
+}

@@ -1,0 +1,48 @@
+.orders {
+    // background-color: aquamarine;
+    width: 100%;
+    min-height: 200px;
+    padding: 10px;
+    
+}
+  
+.order {
+    padding: 10px;
+    box-shadow: 3px 4px 4px 2px rgba(0, 0, 0, 0.334);
+    border-radius: 10px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    // background-color: rgb(181, 215, 131);
+    border: 1px solid black;
+    &__name {
+        background-color: rgba(240, 159, 9, 0.678);
+    }
+    &__status {
+        background-color: rgba(240, 159, 9, 0.678);
+        padding: 5px;
+        border-radius: 10px;
+    }
+    &__sum {
+        background-color: rgba(240, 159, 9, 0.678);
+    }
+  }
+
+  .product {
+    // background-color: yellow;
+    // border: 1px solid yellow;
+    &__name {
+       font-size: 18px;
+       font-weight: 500;
+    }
+    &__count {
+        font-size: 14px;
+        font-weight: 400;
+    }
+    &__price {
+        font-size: 14px;
+        font-weight: 400;
+    }
+  }
+
